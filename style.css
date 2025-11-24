@@ -249,9 +249,7 @@ div .section3 {
   align-items: center;
   object-fit: cover;
 }
-
-#sectionchoose .container {
-  background-color: rgba(240, 255, 255, 0.959);
-  margin-bottom: 30px;
-  padding: 40px 0 50px 0;
+#sectionchoose h2 {
+  text-align: center;
+  padding-bottom: 8%;
 }
