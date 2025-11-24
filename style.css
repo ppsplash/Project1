@@ -217,15 +217,13 @@ div .section3 {
   gap: 10px;
   padding: 10px;
   width: 20%;
-  text-align: justify;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.section3 p {
+  margin: 0;
 }
 
-.features p {
-  margin: 0;
-  font-size: 0.9em;
-  line-height: 1.4;
-  text-wrap-style: balance;
-}
 .round-image {
   width: 80px;
   height: 80px;
