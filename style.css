@@ -197,31 +197,38 @@ nav .conversion {
 figure {
   display: flex;
   flex-direction: row;
-  background-color: var(--color-type-light);
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  margin-bottom: 30px;
+  gap: 10px;
+  margin-bottom: 5px;
   padding: 40px 0 50px 0;
 }
 
-img .samesize {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
+.samesize {
+  width: 80px;
+  height: 80px;
+  object-fit: fill;
 }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 10rem;
-  justify-content: center;
-  gap: 20px;
+div .section3 {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  width: 20%;
+  text-align: justify;
 }
 
+.features p {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.4;
+  text-wrap-style: balance;
+}
 .round-image {
-  width: 5px;
-  height: 5px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
 }
