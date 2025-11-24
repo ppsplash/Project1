@@ -191,15 +191,17 @@ nav .conversion {
 
 .hero {
   justify-content: center;
-  gap: 50px;
 }
 
+.hero-bg {
+  background-color: transparent;
+  background-image: url("assets/images/wood.jpg");
+  background-size: 100%;
+}
 .hero-box1 {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding: 20px;
-  background-color: var(--color-bg-boxes);
 }
 
 .hero-box1 button {
@@ -210,29 +212,30 @@ nav .conversion {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding: 20px;
   text-align: center;
-  background-color: var(--color-bg-boxes);
   border-radius: 25px;
 }
 
 .hero span {
-  background: white;
   padding: 6px;
-  font-size: 14px;
+  font-size: 16px;
   float: left;
+  color: rgb(0, 0, 0);
+  background-color: #ffea00;
 }
 
 .hero-h1 {
   font-size: 30px;
   text-align: left;
   padding-top: 50px;
+  color: rgb(255, 255, 255);
 }
 
 .hero-subheading {
   text-align: left;
-  font-size: 12px;
-  padding-bottom: 30px;
+  font-size: 14px;
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .video-container {
@@ -259,6 +262,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.footer-nav nav a:hover {
+  color: #05b9a1;
+}
 
 .footer-media {
   padding: 5px;
@@ -273,8 +279,14 @@ footer {
 
 .footer-media nav a {
   padding: 7px;
+  text-decoration: none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: rgb(220, 219, 219);
+}
+
+.footer-media nav a:hover {
+  color: #05b9a1;
+  background: #f3d155;
 }
