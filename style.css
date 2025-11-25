@@ -66,8 +66,8 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  line-height: 1.1;
 }
-
 /*
   10. Create a root stacking context
 */
@@ -77,6 +77,11 @@ h6 {
 }
 
 /* CUSTOM STYLES */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Helvetica, sans-serif;
   line-height: 1.6;
@@ -129,7 +134,7 @@ h2 {
   margin-top: 20px;
 }
 
-.boxes button {
+button {
   margin: 20px 0 10px;
   width: 100%;
   border: none;
@@ -177,6 +182,11 @@ nav ul {
   gap: 20px;
   font-weight: 600;
   align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 section {
@@ -239,17 +249,39 @@ nav .conversion {
   padding-bottom: 5%;
 }
 
+.hero a {
+  color: white;
+  text-decoration: none;
+}
+
 .hero {
   justify-content: center;
   padding: 0px;
   margin: 0px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 40px;
+}
+
+.hero button {
+  margin: 0;
 }
 
 .hero-bg {
-  /* background-color: transparent; */
-  background-image: url("assets/images/wood.jpg");
+  background-image: url(assets/images/wood.jpg);
   background-size: 100%;
-  padding: 10px;
+  padding: 0;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #00000096;
+  bottom: 0;
 }
 
 .hero-box1 {
@@ -257,10 +289,12 @@ nav .conversion {
   flex-direction: column;
   justify-content: end;
   width: 600px;
+  padding-bottom: 50px;
+  padding-top: 40px;
 }
 
 .hero-box1 button {
-  width: 40%;
+  width: 160px;
 }
 
 .hero-box2 {
@@ -332,6 +366,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+.footer-nav nav a {
+  color: inherit;
+}
+
 .footer-nav nav a:hover {
   color: #05b9a1;
 }
