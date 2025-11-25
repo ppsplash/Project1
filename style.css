@@ -105,8 +105,8 @@ body {
 
 :root {
   --color-main: #136f63; /* For main conversion elements */
-  --color-bg-body: #fef0e4; /* For the body */
-  --color-bg-section: #b7bcc9; /* For sections */
+  --color-bg-body: #b59981; /* For the body */
+  --color-bg-section: #ebe2d7; /* For sections */
   --color-bg-boxes: #dfe3e3; /* For cards and boxes in general */
   --color-typo-dark: #0c090d; /* For colorized typo */
   --color-type-light: #fafafa;
@@ -195,7 +195,7 @@ section {
 }
 
 section.section-bg {
-  background-color: #bf825d;
+  background-color: #ebe2d7;
   background-size: 100%;
 }
 
@@ -446,5 +446,31 @@ footer {
 
   .hide-800 {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .icons {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 550px) {
+  .parent {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 550px) {
+  .choose {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .choose {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: auto;
   }
 }
