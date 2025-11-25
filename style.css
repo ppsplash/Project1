@@ -368,7 +368,7 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgb(220, 219, 219);
+  /* background: rgb(220, 219, 219); */
 }
 
 .footer-media nav a:hover {
