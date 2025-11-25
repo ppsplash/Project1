@@ -105,8 +105,8 @@ body {
 
 :root {
   --color-main: #136f63; /* For main conversion elements */
-  --color-bg-body: #b59981; /* For the body */
-  --color-bg-section: #ebe2d7; /* For sections */
+  --color-bg-body: #fef0e4; /* For the body */
+  --color-bg-section: #c6bdcf; /* For sections */
   --color-bg-boxes: #dfe3e3; /* For cards and boxes in general */
   --color-typo-dark: #0c090d; /* For colorized typo */
   --color-type-light: #fafafa;
@@ -134,14 +134,18 @@ h2 {
   margin-top: 20px;
 }
 
-button {
+button,
+.button {
   margin: 20px 0 10px;
-  width: 100%;
   border: none;
   background-color: var(--color-main);
   color: white;
-  padding: 8px;
+  padding: 8px 35px;
   cursor: pointer;
+}
+
+.boxes button {
+  width: 100%;
 }
 
 .boxes button:hover {
@@ -195,7 +199,7 @@ section {
 }
 
 section.section-bg {
-  background-color: #ebe2d7;
+  background-color: var(--color-bg-section);
   background-size: 100%;
 }
 
@@ -213,10 +217,11 @@ nav .conversion {
 }
 
 .samesize {
-  width: 80px;
-  height: 80px;
+  flex: 0 1 100%;
+  overflow: hidden;
   object-fit: contain;
-  margin: 3px;
+  padding: 0 15px;
+  max-width: 100px;
 }
 
 .parent {
@@ -264,7 +269,7 @@ nav .conversion {
   gap: 40px;
 }
 
-.hero button {
+.hero .button {
   margin: 0;
 }
 
@@ -289,8 +294,8 @@ nav .conversion {
   flex-direction: column;
   justify-content: end;
   width: 600px;
-  padding-bottom: 50px;
-  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .hero-box1 button {
@@ -324,7 +329,7 @@ nav .conversion {
 .hero-h1 {
   font-size: 50px;
   text-align: left;
-  padding-top: 80px;
+  padding-top: 50px;
   color: rgb(255, 255, 255);
 }
 
@@ -342,7 +347,7 @@ nav .conversion {
   align-items: center;
 }
 video {
-  width: 75%;
+  width: 100%;
   height: auto;
 }
 .video-container {
@@ -418,6 +423,7 @@ footer {
   background-color: var(--color-typo-dark);
   padding: 15px;
   margin-left: -10px;
+  z-index: 999;
 }
 
 .menu-mobile ul {
@@ -436,6 +442,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .hero-img {
+    max-width: 320px;
+  }
+
   .boxes {
     flex-wrap: wrap;
   }
@@ -456,11 +466,14 @@ footer {
   .hide-800 {
     display: none;
   }
-}
 
-@media (max-width: 480px) {
-  .icons {
-    flex-wrap: wrap;
+  .hero-box1 {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .hero-subheading {
+    text-align: center;
   }
 }
 
@@ -468,9 +481,13 @@ footer {
   .parent {
     flex-wrap: wrap;
   }
+  .hero-h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
 }
 
-@media (min-width: 400px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .choose {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
