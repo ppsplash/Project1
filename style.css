@@ -355,3 +355,25 @@ footer {
   color: #05b9a1;
   background: #f3d155;
 }
+
+.hidden-default {
+  display: none;
+}
+
+.menu-mobile {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .boxes {
+    flex-wrap: wrap;
+  }
+
+  .visible-800 {
+    display: block;
+  }
+
+  .hide-800 {
+    display: none;
+  }
+}
