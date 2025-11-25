@@ -341,7 +341,10 @@ nav .conversion {
   justify-content: center;
   align-items: center;
 }
-
+video {
+  width: 75%;
+  height: auto;
+}
 .video-container {
   display: flex;
   justify-content: center;
@@ -350,7 +353,7 @@ nav .conversion {
 }
 
 footer {
-  padding: 80px;
+  padding: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -389,15 +392,12 @@ footer {
 .footer-media nav a {
   padding: 7px;
   text-decoration: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  /* background: rgb(220, 219, 219); */
+  width: 45px;
+  height: auto;
 }
 
 .footer-media nav a:hover {
-  color: #05b9a1;
-  background: #f3d155;
+  opacity: inherit;
 }
 
 .hidden-default {
@@ -438,6 +438,15 @@ footer {
 @media (max-width: 800px) {
   .boxes {
     flex-wrap: wrap;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-h1 {
+    text-align: center;
+    font-size: 3.5rem;
   }
 
   .visible-800 {
