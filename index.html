@@ -9,21 +9,34 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo">logo</div>
-        <nav>
+        <div class="menu-mobile visible-800 hidden-default">
+          <img src="assets/images/burger-menu.svg" alt="mobile menu icon" />
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#prices">Prices</a></li>
+              <li class="conversion"><a href="#">Try For Free</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="logo"><img src="assets/images/logo.svg" alt="Logo" /></div>
+        <nav class="desktopmenu hide-800">
           <ul>
-            <li>Home</li>
-            <li>Feature</li>
-            <li>Prices</li>
-            <li class="conversion">Try For Free</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li class="conversion"><a href="#">Try For Free</a></li>
           </ul>
         </nav>
+        <i class="visible-800 hidden-default"></i>
       </div>
     </header>
     <main>
       <section class="hero-bg">
+        <div class="overlay"></div>
         <div class="container">
-          <div class="hero boxes">
+          <div class="hero">
             <div class="hero-box1">
               <div>
                 <span>#1 Editors Choice App of 2025</span>
@@ -54,11 +67,15 @@
         </div>
       </section>
 
-      <section class="">
+      <section>
         <div class="container">
           <h2>Trusted by companies like<br /></h2>
           <figure class="icons">
-            <img src="assets/images/google.png" alt="Google" class="samesize" />
+            <img
+              src="assets/images/google.webp"
+              alt="Google"
+              class="samesize"
+            />
             <img src="assets/images/hcl.png" alt="HCL" class="samesize" />
             <img src="assets/images/zomato.png" alt="Zomato" class="samesize" />
             <img
@@ -66,12 +83,12 @@
               alt="Microsoft"
               class="samesize"
             />
-            <img src="assets/images/dhl.png" alt="DHL" class="samesize" />
+            <img src="assets/images/dhl.webp" alt="DHL" class="samesize" />
           </figure>
         </div>
       </section>
 
-      <section class="section-bg">
+      <section class="section-bg" id="about">
         <h2>Check out our video:</h2>
         <div class="video-container">
           <video width="480" height="240" controls>
@@ -80,7 +97,7 @@
         </div>
       </section>
 
-      <section class="section-bg">
+      <section class="section-bg" id="features">
         <div class="container">
           <h2>Awesome apps features</h2>
           <p>
@@ -88,7 +105,7 @@
             dolor ullam a obcaecati quisquam unde nihil magnam.
           </p>
           <div class="parent">
-            <div class="section3">
+            <div class="section4">
               <figure class="photo1">
                 <img
                   src="assets/images/fast.jpg"
@@ -102,7 +119,7 @@
                 nobis placeat
               </p>
             </div>
-            <div class="section3">
+            <div class="section4">
               <figure class="photo1">
                 <img
                   src="assets/images/fast.jpg"
@@ -116,7 +133,7 @@
                 nobis placeat
               </p>
             </div>
-            <div class="section3">
+            <div class="section4">
               <figure class="photo1">
                 <img
                   src="assets/images/fast.jpg"
@@ -226,7 +243,7 @@
         </div>
       </section>
 
-      <section class="section-bg">
+      <section class="section-bg" id="prices">
         <div class="container">
           <h2>Get awesome features without extra charges</h2>
           <p class="subheading">
