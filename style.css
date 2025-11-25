@@ -195,7 +195,8 @@ section {
 }
 
 section.section-bg {
-  background-color: var(--color-bg-section);
+  background-color: #bf825d;
+  background-size: 100%;
 }
 
 nav .conversion {
@@ -214,7 +215,8 @@ nav .conversion {
 .samesize {
   width: 80px;
   height: 80px;
-  object-fit: fill;
+  object-fit: contain;
+  margin: 3px;
 }
 
 .parent {
@@ -223,20 +225,9 @@ nav .conversion {
   gap: 40px;
 }
 
-div .section3 {
-  flex: 1;
-  text-align: center;
-}
-
-.section3 p {
-  margin: 0;
-}
-
 .round-image {
   width: 80px;
-  height: 80px;
   border-radius: 50%;
-  object-fit: cover;
 }
 
 .choose {
@@ -244,10 +235,6 @@ div .section3 {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
 }
 
 .choose #photo3 {
@@ -255,8 +242,6 @@ div .section3 {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  align-items: center;
-  object-fit: cover;
 }
 
 #sectionchoose h2 {
