@@ -106,8 +106,8 @@ body {
 :root {
   --color-main: #136f63; /* For main conversion elements */
   --color-bg-body: #fef0e4; /* For the body */
-  --color-bg-section: #c6bdcf; /* For sections */
-  --color-bg-boxes: #dfe3e3; /* For cards and boxes in general */
+  --color-bg-section: #202836; /* For sections */
+  --color-bg-boxes: #19141d; /* For cards and boxes in general */
   --color-typo-dark: #0c090d; /* For colorized typo */
   --color-type-light: #fafafa;
 }
@@ -202,6 +202,7 @@ section {
 section.section-bg {
   background-color: var(--color-bg-section);
   background-size: 100%;
+  color: var(--color-type-light);
 }
 
 nav .conversion {
