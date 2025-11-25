@@ -9,8 +9,19 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo">logo</div>
-        <nav>
+        <div class="menu-mobile visible-800 hidden-default">
+          <img src="assets/images/burger-menu.svg" alt="mobile menu icon" />
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Feature</li>
+              <li>Prices</li>
+              <li class="conversion">Try For Free</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="logo"><img src="assets/images/logo.svg" alt="Logo" /></div>
+        <nav class="desktopmenu hide-800">
           <ul>
             <li>Home</li>
             <li>Feature</li>
@@ -18,6 +29,7 @@
             <li class="conversion">Try For Free</li>
           </ul>
         </nav>
+        <i class="visible-800 hidden-default"></i>
       </div>
     </header>
     <main>
@@ -26,22 +38,30 @@
           <div class="hero boxes">
             <div class="hero-box1">
               <div>
-                <span>#1 Editors Choice App of 2020</span>
+                <span>#1 Editors Choice App of 2025</span>
               </div>
               <div>
-                <h1 class="hero-h1">Some catchy line</h1>
+                <h1 class="hero-h1">
+                  AI, filters and synergy with social networks
+                </h1>
                 <p class="hero-subheading">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloremque perferendis, unde distinctio impedit laudantium
+                  Users can apply cuts, transitions, subtitles and visual
+                  effects with just a few clicks, all automatically generated
+                  from the original content.
                 </p>
               </div>
-              <button>Try for free</button>
+              <div class="hero link-box">
+                <button>Try for free</button>
+                <a href="#">Learn more...</a>
+              </div>
             </div>
             <div class="hero-box2">
-              <h3>Definitely a demo</h3>
-              <p>WBS Coding School</p>
-              <p>Lorem ipsum dolor sit</p>
-              <button>continue</button>
+              <img
+                src="assets/images/hero_app.png"
+                alt="app-demo"
+                class="hero-img"
+              />
+              <!-- <h3>Definitely a demo</h3> -->
             </div>
           </div>
         </div>
