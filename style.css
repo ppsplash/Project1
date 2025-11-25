@@ -148,7 +148,8 @@ button,
   width: 100%;
 }
 
-.boxes button:hover {
+button:hover,
+.button:hover {
   opacity: 0.8;
 }
 
